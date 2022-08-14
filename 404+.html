@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Page not found</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+
+        {% from "macros.html" import get_image %}
+        <div class="error-header">
+            <h1 class="error-title">Umm, you are not supposed to be here</h1>
+        </div>
+
+        {{ get_image('magical,explosion') }}
+        
+
+    </body>
+</html><script type="application/javascript" src="/share.js"></script>
