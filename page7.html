@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>CWHQ Blog</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+
+        <div class="header-container">
+            <h1>Codewizard's Blog</h1>
+        </div>
+      
+      {% from "macros.html" import blog_post %}
+      <div class="post-container">
+        {% for post in posts %}
+        {{ blog_post(post, False) }}
+        {% endfor %}
+      </div>
+
+    </body>
+</html><script type="application/javascript" src="/share.js"></script>
